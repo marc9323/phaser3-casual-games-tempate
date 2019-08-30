@@ -4,8 +4,8 @@ class SceneInstructions extends Phaser.Scene {
     }
     preload() {}
     create() {
-        console.log("SceneInstructions!");
-        this.back = this.add.image(0, 0, "titleBack");
+        console.log('SceneInstructions!');
+        this.back = this.add.image(0, 0, 'titleBack');
         this.back.setOrigin(0, 0);
         this.back.displayWidth = game.config.width;
         this.back.displayHeight = game.config.height;
@@ -15,34 +15,32 @@ class SceneInstructions extends Phaser.Scene {
             rows: 11,
             cols: 11
         });
-       // this.aGrid.showNumbers();
+        // this.aGrid.showNumbers();
 
         //
         //
-        this.sampleImage = this.add.image(0, 0, "sample");
-        Align.scaleToGameW(this.sampleImage, .5);
+        this.sampleImage = this.add.image(0, 0, 'sample');
+        Align.scaleToGameW(this.sampleImage, 0.5);
         this.aGrid.placeAtIndex(27, this.sampleImage);
         this.text1 = this.add.text(0, 0, mt.model.instructionText, {
-            color: "#000000",
-            fontSize: game.config.width / 45,
-            backgroundColor:"#ffffff"
+            color: '#000000',
+            fontSize: game.config.width / 30,
+            backgroundColor: '#ffffff'
         });
         this.text1.setOrigin(0.5, 0.5);
         this.aGrid.placeAtIndex(71, this.text1);
 
-
         this.btnStart = new TextButton({
             scene: this,
-            key: "green",
+            key: 'green',
             event: mt.constants.SHOW_TITLE,
-            params:this.scene,
-            text: "Home",
-            scale: .35,
+            params: this.scene,
+            text: 'Home',
+            scale: 0.35,
             textScale: 25,
             textColor: '#ffffff'
         });
-        this.aGrid.placeAtIndex(93,this.btnStart);
-
+        this.aGrid.placeAtIndex(93, this.btnStart);
     }
     update() {}
 }
