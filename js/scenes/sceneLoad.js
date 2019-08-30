@@ -23,11 +23,18 @@ class SceneLoad extends Phaser.Scene {
         //
         /* this.load.audio("right", "audio/right.wav");
         this.load.audio("wrong", "audio/wrong.wav");
-        this.load.audio("levelUp", "audio/levelUp.wav");
-        this.load.audio("background", "audio/background.mp3");*/
+        this.load.audio("levelUp", "audio/levelUp.wav");*/
+        this.load.audio('background', 'audio/background.mp3');
+        this.load.audio('catch', 'audio/catch.wav');
+        this.load.audio('hit', 'audio/hit.mp3');
+        this.load.audio('smallPop', 'audio/smallPop.wav');
+
         this.load.image('ball', 'images/ball.png');
         this.load.image('block', 'images/block.png');
         this.load.image('coin', 'images/coin.png');
+
+        this.load.image('space', 'images/space.png');
+        this.load.image('star', 'images/star.png');
     }
     create() {
         mt.emitter = new Phaser.Events.EventEmitter();
