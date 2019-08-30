@@ -20,7 +20,7 @@ class SceneTitle extends Phaser.Scene {
         //
         this.titleText = this.add.text(0, 0, mt.model.gameTitle, {
             fontSize: game.config.width / 10,
-            color: '#ff0000'
+            color: '#ffffff'
         });
         //
         //
