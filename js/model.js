@@ -7,7 +7,7 @@ class Model {
         this._musicOn = true;
         this._sfxOn = true;
         this.gameTitle = 'Stars\n&\nStairs';
-        this.instructionText = 'Instructions Here';
+        this.instructionText = 'Grab the stars.\nStay on the platforms!';
     }
     set musicOn(val) {
         this._musicOn = val;
